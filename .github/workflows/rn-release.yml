@@ -35,7 +35,7 @@ jobs:
         run: |
           yarn bootstrap
       - name: Release Taro React Native bundle
-        uses: zhiqingchen/taro-react-native-release@v1.1
+        uses: zhiqingchen/taro-react-native-release@v1
         with:
           workingdirectory: ./packages/taro-ui-demo-rn
           token: ${{ secrets.GITHUB_TOKEN }}
