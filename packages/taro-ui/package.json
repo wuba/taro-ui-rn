@@ -1,6 +1,6 @@
 {
   "name": "taro-ui",
-  "version": "3.0.0-alpha.11",
+  "version": "3.0.0-alpha.14",
   "description": "UI KIT for Taro",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
@@ -38,7 +38,6 @@
     "build": "yarn run build:rollup && yarn run build:lib",
     "build:lib": "tsc --project ./tsconfig.build.json",
     "build:rollup": "rollup --config ./config/rollup.config.js",
-    "prepublishOnly": "yarn run clean && yarn run build",
     "lint": "eslint ./src --fix",
     "lint:style": "stylelint \"src/**/*.scss\" --syntax scss",
     "lint:style-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix",
@@ -56,9 +55,6 @@
     "react-native-modal": "^13.0.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-json": "^4.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
     "@tarojs/components": "~3.0.2",
     "@tarojs/react": "~3.0.2",
     "@tarojs/taro": "~3.0.2",
@@ -71,10 +67,6 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-native": "^0.64.0",
-    "rollup": "^2.3.1",
-    "rollup-plugin-copy": "^3.3.0",
-    "rollup-plugin-typescript2": "^0.27.0",
-    "rollup-plugin-visualizer": "^4.0.2",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
@@ -82,5 +74,6 @@
     "@tarojs/react": ">=3",
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
-  }
+  },
+  "gitHead": "c33cc7fbb734f0dbdd6e305dda1bc8300e5adbe2"
 }
